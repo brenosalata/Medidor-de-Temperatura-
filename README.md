@@ -32,8 +32,15 @@ O projeto tem como objetivo detectar a temperatura do ambiente para ajudar e aux
 * MQTT Dash
 * 1 Resistor 220ohms
 
-# Modo de Montar
+# Modo de Montagem
 
+![Montagem](https://github.com/brenosalata/Medidor-de-Temperatura-/blob/2b8228919a6943c7ee43e3e2473560f2743222dd/Ilustra%C3%A7%C3%A3o%20da%20Montagem.jpeg)
 
-![Node Mcu](https://github.com/brenosalata/Medidor-de-Temperatura-/blob/main/Ilustração%20da%20Montagem.jpeg)
+# Sobre o código
+
+Para programar o que vamos desenvolver devemos primeiramente baixar o Arduino IDE e caso não tenha esse Software você pode fazer o download <a href="https://www.arduino.cc/en/software"> clicando aqui.</a>
+
+Agora que já temos o Arduino IDE Instalado, vamos instalar dentro dele as bibliotecas necessárias, são elas:
+
+* E
 
