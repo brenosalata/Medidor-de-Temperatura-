@@ -47,7 +47,8 @@ Agora que já temos o Arduino IDE Instalado, vamos instalar dentro dele as bibli
 * DHT Sensor Library da Adafruit que é responsável por fazer com que o sensor de temperatura funcione corretamente capturando a temperatura e umidade.
 
 Após ter todas essas bibliotecas instaladas, o código em si fica fácil de ser compreendido:
-Temos que configurar e instanciar as variáveis para fazer a conexão com o Wifi, a conexão do MQTT e o buzzer. O método loop() que será responsável por ler as váriaveis, printar valores no monitor especial e no MQTT.
+Temos que configurar e instanciar as variáveis para fazer a conexão com o Wifi, a conexão do MQTT e etc.. 
+O método loop() que será responsável por ler as váriaveis, printar valores no monitor especial e no MQTT.
 
 No código disponibilizado é descrito o passo a passo do que foi feito, caso queira entender profundamente o que foi realizado,  <a href="https://github.com/brenosalata/Medidor-de-Temperatura-/blob/main/MedidorTemperaturaMQTT.ino"> clique aqui.</a>
 
