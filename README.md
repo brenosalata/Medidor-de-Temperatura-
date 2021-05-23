@@ -62,8 +62,7 @@ No projeto utilizamos o MQTT Box para testar se as publicações e subscrições
 Para detalhar ainda mais o que foi desenvolvido disponibilizamos um vídeo para melhor compreensão do passo a passo de criação até o funcionamento do projeto final.
 
 
-
-![Vídeo]("https://www.publicidadenaweb.com/wp-content/uploads/2019/01/videos-youtube.jpg")
-
+<a href="https://youtu.be/cJ_ocS_aPRQ"> ![Video](https://github.com/brenosalata/Medidor-de-Temperatura-/blob/e5484b4178d0253f322f97da720fcd705a50b9a4/videos-youtube.jpg) </a>
 
 
+<a> Para acessar o vídeo clique na imagem acima.</a>
