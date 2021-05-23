@@ -11,7 +11,7 @@
 
 O projeto tem como objetivo detectar a temperatura do ambiente para ajudar e auxiliar agricultores no plantio.
 
-  Ao detectar a temperatura acima de 30 graus no ambiente, uma lâmpada irá acender identificando que a temperatura está alta, caso contrário essa lâmpada irá continuar apagada. Utilizaremos também um aplicativo chamado MQTT Dash, ele terá o papel de receber os dados de temperatura e umidade atual, além de conter um botão p
+  Ao detectar a temperatura acima de 30 graus no ambiente, uma lâmpada irá acender identificando que a temperatura está alta, caso contrário essa lâmpada irá continuar apagada. Utilizaremos também um aplicativo chamado MQTT Dash, ele terá o papel de receber os dados de temperatura e umidade atual, além de conter um botão para ativar ou desativar a lâmpada que define se ela fica acessa ou apagada levando em consideração sua regra de acender com certa temperatura.
 
 ![Projeto Final](https://github.com/brenosalata/Medidor-de-Temperatura-/blob/cbf12e8e2306d08e75e33b5e81af7880b989607d/Intro.jpeg)
 
@@ -34,7 +34,7 @@ O projeto tem como objetivo detectar a temperatura do ambiente para ajudar e aux
 
 # Modo de Montagem
 
-![Montagem](https://github.com/brenosalata/Medidor-de-Temperatura-/blob/2b8228919a6943c7ee43e3e2473560f2743222dd/Ilustra%C3%A7%C3%A3o%20da%20Montagem.jpeg)
+![Montagem](https://github.com/brenosalata/Medidor-de-Temperatura-/blob/2929517f98f99c64584ca48646160f7267422230/Montagem.png)
 
 # Sobre o código
 
@@ -42,5 +42,28 @@ Para programar o que vamos desenvolver devemos primeiramente baixar o Arduino ID
 
 Agora que já temos o Arduino IDE Instalado, vamos instalar dentro dele as bibliotecas necessárias, são elas:
 
-* E
+* esp8266 by ESP8266 Community que permite que a placa NodeMcu seja reconhecida;
+* PubSubClient que perimite a comunicação com o MQTT com seus tópicos publishers e subscribers tornando possível a utilização do mqtt;
+* DHT Sensor Library da Adafruit que é responsável por fazer com que o sensor de temperatura funcione corretamente capturando a temperatura e umidade.
+
+Após ter todas essas bibliotecas instaladas, o código em si fica fácil de ser compreendido:
+Temos que configurar e instanciar as variáveis para fazer a conexão com o Wifi, a conexão do MQTT e o buzzer. O método loop() que será responsável por ler as váriaveis, printar valores no monitor especial e no MQTT.
+
+No código disponibilizado é descrito o passo a passo do que foi feito, caso queira entender profundamente o que foi realizado,  <a href="https://github.com/brenosalata/Medidor-de-Temperatura-/blob/main/MedidorTemperaturaMQTT.ino"> clique aqui.</a>
+
+# MQTT
+
+No projeto desenvolvido utilizamos o MQTT Box e o MQTT Dash ambos para monitorar e controlar as publicações e subscrições dos tópicos, em ambos também fizemos a conexão com o broker público "broker.mqtt-dashboard.com".
+
+No projeto utilizamos o MQTT Box para testar se as publicações e subscrições estavam funcionando, logo após os testes para identificar o funcionamento correto partimos para o MQTT Dash que além de permitir controlar essas publicações e subscrições ele permite uma automatização da ferramenta, foi através dele que incluimos um botão para ativar e desativar a lâmpada e um campo de texto que avisa esse status da lâmpada em tempo real. E por estar utilizando um celular para tal função conseguimos por longas distancias checar a temperatura, umidade e o status, além de controlar a lâmpada, isso tudo somente com a conexão wi-fi e o protocolo MQTT
+
+# Vídeo Demonstrativo
+
+Para detalhar ainda mais o que foi desenvolvido disponibilizamos um vídeo para melhor compreensão do passo a passo de criação até o funcionamento do projeto final.
+
+
+
+![Vídeo]("https://www.publicidadenaweb.com/wp-content/uploads/2019/01/videos-youtube.jpg")
+
+
 
