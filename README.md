@@ -11,7 +11,6 @@ O projeto tem como objetivo detectar a temperatura do ambiente para ajudar e aux
 
   Ao detectar a temperatura acima de 30 graus no ambiente, uma lâmpada irá acender identificando que a temperatura está alta, caso contrário essa lâmpada irá continuar apagada. Utilizaremos também um aplicativo chamado MQTT Dash, ele terá o papel de receber os dados de temperatura e umidade atual, além de conter um botão para ativar ou desativar a lâmpada que define se ela fica acessa ou apagada, levando em consideração sua regra de acender com certa temperatura.
 
-![Projeto Final](https://github.com/brenosalata/Medidor-de-Temperatura-/blob/cbf12e8e2306d08e75e33b5e81af7880b989607d/Intro.jpeg)
 
 # Hardware Utilizados
 
@@ -47,7 +46,7 @@ Podemos acompanhar melhor o que foi dito acima atráves do <a href="https://gith
 
 Para melhor compreender como fica o resultado final do projeto montado, segue imagem abaixo:
 
-![Montagem](https://github.com/brenosalata/Medidor-de-Temperatura-/blob/2929517f98f99c64584ca48646160f7267422230/Montagem.png)
+![Projeto Final](https://github.com/brenosalata/Medidor-de-Temperatura-/blob/cbf12e8e2306d08e75e33b5e81af7880b989607d/Intro.jpeg)
 
 # Software desenvolvido
 
