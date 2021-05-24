@@ -9,8 +9,8 @@ char msg[MSG_BUFFER_SIZE];                                                      
 #define DHTTYPE DHT22 // Define o tipo de DHT
 DHT_Unified dht(DHTPIN, DHTTYPE);                                                                 // Considera valor do pino e do tipo de DHT
 uint32_t delayMS;                                                                                 // Variável de atraso
-const char* ssid = "Marco ";                                                                    // ID de conexão 
-const char* password = "breno1breno1";                                                              // senha de conexão
+const char* ssid = "Sua Rede";                                                                    // ID de conexão 
+const char* password = "Sua Senha";                                                              // senha de conexão
 const char* mqtt_server = "broker.mqtt-dashboard.com";                                            // endereço do broker
 WiFiClient espClient;                                                                             // Cliente ESP WiFi
 PubSubClient client(espClient);                                                                   // Cliente ESP Publicador/Subscrito
