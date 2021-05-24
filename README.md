@@ -52,23 +52,23 @@ Para melhor compreender como fica o resultado final do projeto montado segue ima
 
 Para programar o que vamos desenvolver devemos primeiramente baixar o Arduino IDE e caso não tenha esse Software você pode fazer o download <a href="https://www.arduino.cc/en/software"> clicando aqui.</a>
 
-Agora que já temos o Arduino IDE Instalado, vamos instalar dentro dele as bibliotecas necessárias, são elas:
+Após a instalação do Arduino IDE, vamos instalar dentro dele as bibliotecas necessárias. O esp8266 by ESP8266 Community que permite que o microcontrolador NodeMcu seja reconhecido, além disso vamos utilizar também o PubSubClient que perimite a comunicação com o MQTT, tópicos publishers e subscribers, tornando possível a utilização do mqtt e por fim iremos instalar o DHT Sensor Library da Adafruit que é responsável por fazer com que o sensor de temperatura funcione corretamente capturando a temperatura e umidade.
 
-* esp8266 by ESP8266 Community que permite que a placa NodeMcu seja reconhecida;
-* PubSubClient que perimite a comunicação com o MQTT com seus tópicos publishers e subscribers tornando possível a utilização do mqtt;
-* DHT Sensor Library da Adafruit que é responsável por fazer com que o sensor de temperatura funcione corretamente capturando a temperatura e umidade.
+Após ter todas essas bibliotecas instaladas, vamos para parte do código:
 
-Após ter todas essas bibliotecas instaladas, o código em si fica fácil de ser compreendido:
-Temos que configurar e instanciar as variáveis para fazer a conexão com o Wifi, a conexão do MQTT e etc.. 
-O método loop() que será responsável por ler as váriaveis, printar valores no monitor especial e no MQTT.
+Temos que configurar as variáveis para fazer a conexão com o Wifi, a conexão do MQTT e etc.. 
 
-No código disponibilizado é descrito o passo a passo do que foi feito, caso queira entender profundamente o que foi realizado,  <a href="https://github.com/brenosalata/Medidor-de-Temperatura-/blob/main/MedidorTemperaturaMQTT.ino"> clique aqui.</a>
+Vamos definir no código o DHT22, configurar os pin conectados no microcontrolador, definir o ID e senha de conexão para conectar no wi-fi e criar o Client ESP Publicador/Subscrito. 
+
+No código disponibilizado é descrito o passo a passo do que foi feito com comentarios de cima abaixo, caso queira entender com mais detalhes o que foi realizado,  <a href="https://github.com/brenosalata/Medidor-de-Temperatura-/blob/main/MedidorTemperaturaMQTT.ino"> clique aqui.</a>
 
 # MQTT
 
 No projeto desenvolvido utilizamos o MQTT Box e o MQTT Dash ambos para monitorar e controlar as publicações e subscrições dos tópicos, em ambos também fizemos a conexão com o broker público "broker.mqtt-dashboard.com".
 
-No projeto utilizamos o MQTT Box para testar se as publicações e subscrições estavam funcionando, logo após os testes para identificar o funcionamento correto partimos para o MQTT Dash que além de permitir controlar essas publicações e subscrições ele permite uma automatização da ferramenta, foi através dele que incluimos um botão para ativar e desativar a lâmpada e um campo de texto que avisa esse status da lâmpada em tempo real. E por estar utilizando um celular para tal função conseguimos por longas distancias checar a temperatura, umidade e o status, além de controlar a lâmpada, isso tudo somente com a conexão wi-fi e o protocolo MQTT
+No projeto utilizamos o MQTT Box para testar se as publicações e subscrições, fizemos a conexão identificando o broker (mesmo que utilizamos no código) e o nosso protocolo que é mqtt/tcp. Já o MQTT Dash foi nosso principal meio de interação para fazer com que o protótipo funcione do jeito esperado, pois ele além de permitir controlar essas publicações e subscrições ele permite uma automatização da ferramenta, foi nele que inserimos um botão para ativar e desativar a lâmpada e um campo de texto que avisa esse status da lâmpada, além de mostrar também a temperatura e a umidade, tudo isso em tempo real.
+
+Tudo isso foi feito atráves de um celular, permitindo uma maior usabilidade para o usuário podendo controlar tudo na palma da sua mão apenas utilizando wi-fi e mqtt. 
 
 # Vídeo Demonstrativo
 
