@@ -1,21 +1,19 @@
 # Medidor-de-Temperatura-
 
-# Links do Projeto
+# Membros do Projeto 
 
-* <a href="https://github.com/brenosalata/Medidor-de-Temperatura-/blob/main/Diagrama%20do%20Circuito%20Eletroeletrônico.jpeg"> Diagrama do Circuito Eletroeltrônico</a>
-* <a href="https://github.com/brenosalata/Medidor-de-Temperatura-/blob/main/Fluxograma.jpeg"> Fluxograma do Projeto</a>
-* <a href="https://github.com/brenosalata/Medidor-de-Temperatura-/blob/main/Ilustração%20da%20Montagem.jpeg"> Ilustração da Montagem do Projeto</a>
-* <a href="https://github.com/brenosalata/Medidor-de-Temperatura-/blob/main/MedidorTemperaturaMQTT.ino"> Código utilizado</a>
+* Breno Salata da Silva - 31917641
+* Bianca Maciel Matos - 31936873
 
-# Introdução
+# Descrição de Uso e Funcionamento
 
 O projeto tem como objetivo detectar a temperatura do ambiente para ajudar e auxiliar agricultores no plantio.
 
-  Ao detectar a temperatura acima de 30 graus no ambiente, uma lâmpada irá acender identificando que a temperatura está alta, caso contrário essa lâmpada irá continuar apagada. Utilizaremos também um aplicativo chamado MQTT Dash, ele terá o papel de receber os dados de temperatura e umidade atual, além de conter um botão para ativar ou desativar a lâmpada que define se ela fica acessa ou apagada levando em consideração sua regra de acender com certa temperatura.
+  Ao detectar a temperatura acima de 30 graus no ambiente, uma lâmpada irá acender identificando que a temperatura está alta, caso contrário essa lâmpada irá continuar apagada. Utilizaremos também um aplicativo chamado MQTT Dash, ele terá o papel de receber os dados de temperatura e umidade atual, além de conter um botão para ativar ou desativar a lâmpada que define se ela fica acessa ou apagada, levando em consideração sua regra de acender com certa temperatura.
 
 ![Projeto Final](https://github.com/brenosalata/Medidor-de-Temperatura-/blob/cbf12e8e2306d08e75e33b5e81af7880b989607d/Intro.jpeg)
 
-# Componentes utilizados
+# Hardware Utilizados
 
 * NodeMCU ESP8266
 * Cabo Micro USB
@@ -44,11 +42,14 @@ Ligamos também os jumpers (3 Macho-Macho) do NodeMCU para o módulo relé, e co
 
 Conectamos os cabos flexíveis e energia no soquete e plugamos a lâmpada no soquete.
 
-Para melhor compreender como fica o resultado final do projeto montado segue imagem abaixo:
+Podemos acompanhar melhor o que foi dito acima atráves do <a href="https://github.com/brenosalata/Medidor-de-Temperatura-/blob/main/Diagrama%20do%20Circuito%20Eletroeletrônico.jpeg"> diagrama do circuito eletroeletrônico. </a>
+
+
+Para melhor compreender como fica o resultado final do projeto montado, segue imagem abaixo:
 
 ![Montagem](https://github.com/brenosalata/Medidor-de-Temperatura-/blob/2929517f98f99c64584ca48646160f7267422230/Montagem.png)
 
-# Sobre o código
+# Software desenvolvido
 
 Para programar o que vamos desenvolver devemos primeiramente baixar o Arduino IDE e caso não tenha esse Software você pode fazer o download <a href="https://www.arduino.cc/en/software"> clicando aqui.</a>
 
@@ -62,7 +63,7 @@ Vamos definir no código o DHT22, configurar os pin conectados no microcontrolad
 
 No código disponibilizado é descrito o passo a passo do que foi feito com comentarios de cima abaixo, caso queira entender com mais detalhes o que foi realizado,  <a href="https://github.com/brenosalata/Medidor-de-Temperatura-/blob/main/MedidorTemperaturaMQTT.ino"> clique aqui.</a>
 
-# MQTT
+# Protocolo MQTT - MQTT Box & MQTT Dash
 
 No projeto desenvolvido utilizamos o MQTT Box e o MQTT Dash ambos para monitorar e controlar as publicações e subscrições dos tópicos, em ambos também fizemos a conexão com o broker público "broker.mqtt-dashboard.com".
 
@@ -72,7 +73,7 @@ Utilizamos o MQTT Box para testar se as publicações e subscrições, fizemos a
 
 Tudo isso foi feito atráves de um celular, permitindo uma maior usabilidade para o usuário podendo controlar tudo na palma da sua mão apenas utilizando wi-fi e mqtt. 
 
-# Vídeo Demonstrativo
+# Vídeo Demonstração
 
 Para detalhar ainda mais o que foi desenvolvido disponibilizamos um vídeo para melhor compreensão do passo a passo de criação, montagem, explicação e funcionamento do projeto final.
 
@@ -81,3 +82,11 @@ Para detalhar ainda mais o que foi desenvolvido disponibilizamos um vídeo para 
 
 
 <a> Para acessar o vídeo clique na imagem acima.</a>
+
+
+# Links Utilizados no Projeto
+
+* <a href="https://github.com/brenosalata/Medidor-de-Temperatura-/blob/main/Diagrama%20do%20Circuito%20Eletroeletrônico.jpeg"> Diagrama do Circuito Eletroeltrônico.</a>
+* <a href="https://github.com/brenosalata/Medidor-de-Temperatura-/blob/main/Fluxograma.jpeg"> Fluxograma do Projeto.</a>
+* <a href="https://github.com/brenosalata/Medidor-de-Temperatura-/blob/main/Ilustração%20da%20Montagem.jpeg"> Ilustração da Montagem do Projeto.</a>
+* <a href="https://github.com/brenosalata/Medidor-de-Temperatura-/blob/main/MedidorTemperaturaMQTT.ino"> Código utilizado.</a>
