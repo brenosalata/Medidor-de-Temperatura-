@@ -12,7 +12,9 @@ O projeto tem como objetivo detectar a temperatura do ambiente para ajudar e aux
   Ao detectar a temperatura acima de 30 graus no ambiente, uma lâmpada irá acender identificando que a temperatura está alta, caso contrário essa lâmpada irá continuar apagada. Utilizaremos também um aplicativo chamado MQTT Dash, ele terá o papel de receber os dados de temperatura e umidade atual, além de conter um botão para ativar ou desativar a lâmpada que define se ela fica acessa ou apagada, levando em consideração sua regra de acender com certa temperatura.
 
 Para melhor compreender o que foi desenvolvido disponibilizamos um vídeo demonstrativo no Youtube. 
-<a href="https://youtu.be/cJ_ocS_aPRQ"> Clique aqui</a> para ser redirecionado para o vídeo.
+
+
+<a href="https://youtu.be/cJ_ocS_aPRQ"> Clique aqui</a> para assistir o vídeo.
 
 # Hardware Utilizados
 
@@ -54,7 +56,7 @@ Para melhor compreender como fica o resultado final do projeto montado, segue im
 
 Para programar o que vamos desenvolver devemos primeiramente baixar o Arduino IDE e caso não tenha esse Software você pode fazer o download <a href="https://www.arduino.cc/en/software"> clicando aqui.</a>
 
-Após a instalação do Arduino IDE, vamos instalar dentro dele as bibliotecas necessárias. O esp8266 by ESP8266 Community que permite que o microcontrolador NodeMcu seja reconhecido, além disso vamos utilizar também o PubSubClient que perimite a comunicação com o MQTT, tópicos publishers e subscribers, tornando possível a utilização do mqtt e por fim iremos instalar o DHT Sensor Library da Adafruit que é responsável por fazer com que o sensor de temperatura funcione corretamente capturando a temperatura e umidade.
+Após a instalação do Arduino IDE, vamos instalar dentro dele as bibliotecas necessárias: O esp8266 by ESP8266 Community, que permite que o microcontrolador NodeMcu seja reconhecido,  o PubSubClient e  os tópicos publishers e subscribers, para a comunicação com o MQTT, tornando possível a utilização do mqtt e por fim iremos instalar o DHT Sensor Library da Adafruit, que é responsável por fazer com que o sensor de temperatura funcione corretamente capturando a temperatura e umidade.
 
 Após ter todas essas bibliotecas instaladas, vamos para parte do código:
 
@@ -68,7 +70,7 @@ No código disponibilizado é descrito o passo a passo do que foi feito com come
 
 No projeto desenvolvido utilizamos o MQTT Box e o MQTT Dash ambos para monitorar e controlar as publicações e subscrições dos tópicos, em ambos também fizemos a conexão com o broker público "broker.mqtt-dashboard.com".
 
-O MQTT Box é uma instenção do browser que viabiliza a conexão com diversos brokers Mqtt de forma simultânea, caso ainda não tenha essa instenção instalada, <a href="https://chrome.google.com/webstore/detail/mqttbox/kaajoficamnjijhkeomgfljpicifbkaf"> clique aqui.</a>
+O MQTT Box é uma instenção do browser que viabiliza a conexão com diversos brokers Mqtt de forma simultânea, caso ainda não tenha essa extensão instalada, <a href="https://chrome.google.com/webstore/detail/mqttbox/kaajoficamnjijhkeomgfljpicifbkaf"> clique aqui.</a>
 
 Utilizamos o MQTT Box para testar se as publicações e subscrições, fizemos a conexão identificando o broker (mesmo que utilizamos no código) e o nosso protocolo que é mqtt/tcp. Já o MQTT Dash foi nosso principal meio de interação para fazer com que o protótipo funcione do jeito esperado, pois ele além de permitir controlar essas publicações e subscrições ele permite uma automatização da ferramenta, foi nele que inserimos um botão para ativar e desativar a lâmpada e um campo de texto que avisa esse status da lâmpada, além de mostrar também a temperatura e a umidade, tudo isso em tempo real.
 
