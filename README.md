@@ -34,6 +34,18 @@ O projeto tem como objetivo detectar a temperatura do ambiente para ajudar e aux
 
 # Modo de Montagem
 
+Agora que temos todos os Materias, vamos montar nosso protótipo.
+
+Colocamos o metado do NodeMCU em uma protoboard (830 pontos) e o sensor de temperatura conectado em outro protoboard (430 pontos)
+
+Ligamos os jumpers (2 Macho-Macho e 1 Macho-Fêmea) do NodeMCU com o sensor DHT22, utilizando um resistor pegando o sinal do pino VCC para o pino OUT do sensor DHT22.
+
+Ligamos também os jumpers (3 Macho-Macho) do NodeMCU para o módulo relé, e conectamos os cabos fléxiveis no módulo relé.
+
+Conectamos os cabos flexíveis e energia no soquete e plugamos a lâmpada no soquete.
+
+Para melhor compreender como fica o resultado final do projeto montado segue imagem abaixo:
+
 ![Montagem](https://github.com/brenosalata/Medidor-de-Temperatura-/blob/2929517f98f99c64584ca48646160f7267422230/Montagem.png)
 
 # Sobre o código
@@ -60,7 +72,7 @@ No projeto utilizamos o MQTT Box para testar se as publicações e subscrições
 
 # Vídeo Demonstrativo
 
-Para detalhar ainda mais o que foi desenvolvido disponibilizamos um vídeo para melhor compreensão do passo a passo de criação até o funcionamento do projeto final.
+Para detalhar ainda mais o que foi desenvolvido disponibilizamos um vídeo para melhor compreensão do passo a passo de criação, montagem, explicação e funcionamento do projeto final.
 
 
 <a href="https://youtu.be/cJ_ocS_aPRQ"> ![Video](https://github.com/brenosalata/Medidor-de-Temperatura-/blob/e5484b4178d0253f322f97da720fcd705a50b9a4/videos-youtube.jpg) </a>
