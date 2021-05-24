@@ -11,6 +11,8 @@ O projeto tem como objetivo detectar a temperatura do ambiente para ajudar e aux
 
   Ao detectar a temperatura acima de 30 graus no ambiente, uma lâmpada irá acender identificando que a temperatura está alta, caso contrário essa lâmpada irá continuar apagada. Utilizaremos também um aplicativo chamado MQTT Dash, ele terá o papel de receber os dados de temperatura e umidade atual, além de conter um botão para ativar ou desativar a lâmpada que define se ela fica acessa ou apagada, levando em consideração sua regra de acender com certa temperatura.
 
+Para melhor compreender o que foi desenvolvido disponibilizamos um vídeo demonstrativo no Youtube. 
+<a href="https://youtu.be/cJ_ocS_aPRQ"> Clique aqui</a> para ser redirecionado para o vídeo.
 
 # Hardware Utilizados
 
@@ -71,16 +73,6 @@ O MQTT Box é uma instenção do browser que viabiliza a conexão com diversos b
 Utilizamos o MQTT Box para testar se as publicações e subscrições, fizemos a conexão identificando o broker (mesmo que utilizamos no código) e o nosso protocolo que é mqtt/tcp. Já o MQTT Dash foi nosso principal meio de interação para fazer com que o protótipo funcione do jeito esperado, pois ele além de permitir controlar essas publicações e subscrições ele permite uma automatização da ferramenta, foi nele que inserimos um botão para ativar e desativar a lâmpada e um campo de texto que avisa esse status da lâmpada, além de mostrar também a temperatura e a umidade, tudo isso em tempo real.
 
 Tudo isso foi feito atráves de um celular, permitindo uma maior usabilidade para o usuário podendo controlar tudo na palma da sua mão apenas utilizando wi-fi e mqtt. 
-
-# Vídeo Demonstração
-
-Para detalhar ainda mais o que foi desenvolvido disponibilizamos um vídeo para melhor compreensão do passo a passo de criação, montagem, explicação e funcionamento do projeto final.
-
-
-<a href="https://youtu.be/cJ_ocS_aPRQ"> ![Video](https://github.com/brenosalata/Medidor-de-Temperatura-/blob/e5484b4178d0253f322f97da720fcd705a50b9a4/videos-youtube.jpg) </a>
-
-
-<a> Para acessar o vídeo clique na imagem acima.</a>
 
 
 # Links Utilizados no Projeto
