@@ -70,11 +70,10 @@ No código disponibilizado é descrito o passo a passo do que foi feito com come
 
 No projeto desenvolvido utilizamos o MQTT Box e o MQTT Dash ambos para monitorar e controlar as publicações e subscrições dos tópicos, em ambos também fizemos a conexão com o broker público "broker.mqtt-dashboard.com".
 
-O MQTT Box é uma instenção do browser que viabiliza a conexão com diversos brokers Mqtt de forma simultânea, caso ainda não tenha essa extensão instalada, <a href="https://chrome.google.com/webstore/detail/mqttbox/kaajoficamnjijhkeomgfljpicifbkaf"> clique aqui.</a>
+O MQTT Box é uma extensão do browser que viabiliza a conexão com diversos brokers MQTT de forma simultânea, caso ainda não tenha essa extensão instalada, <a href="https://chrome.google.com/webstore/detail/mqttbox/kaajoficamnjijhkeomgfljpicifbkaf"> clique aqui.</a>.
 
-Utilizamos o MQTT Box para testar se as publicações e subscrições, fizemos a conexão identificando o broker (mesmo que utilizamos no código) e o nosso protocolo que é mqtt/tcp. Já o MQTT Dash foi nosso principal meio de interação para fazer com que o protótipo funcione do jeito esperado, pois ele além de permitir controlar essas publicações e subscrições ele permite uma automatização da ferramenta, foi nele que inserimos um botão para ativar e desativar a lâmpada e um campo de texto que avisa esse status da lâmpada, além de mostrar também a temperatura e a umidade, tudo isso em tempo real.
-
-Tudo isso foi feito atráves de um celular, permitindo uma maior usabilidade para o usuário podendo controlar tudo na palma da sua mão apenas utilizando wi-fi e mqtt. 
+Utilizamos o MQTT Box para testar as publicações e subscrições, fizemos a conexão identificando o broker (mesmo que utilizamos no código) e o nosso protocolo que é MQTT/TCP.
+Já o MQTT Dash foi nosso principal meio de interação para fazer com que o protótipo funcione do jeito esperado, pois ele além de permitir controlar essas publicações e subscrições ele permite uma automatização da ferramenta, foi nele que inserimos um botão para ativar e desativar a lâmpada e um campo de texto que avisa esse status da lâmpada, além de mostrar também a temperatura e a umidade, tudo isso em tempo real.
 
 
 # Links Utilizados no Projeto
